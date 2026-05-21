@@ -16,6 +16,12 @@ if($conn->connect_error){
 };
 
 
+if($_SERVER["REQUEST_METHOD"] == "POST"){
+    $usuario = $_POST["usuario"];
+    $senha = $_POST["senha"];
+};
+
+
 ?>
 
 <html lang="en">
